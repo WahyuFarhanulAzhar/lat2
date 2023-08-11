@@ -14,6 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
 </head>
 <body>
 
@@ -23,7 +29,7 @@
         <div class="container">
             <div class="nav-content-wrapper">
                 <div class="nav-brand">
-                    <img src="./asset/navbar/logo/NFTHub.svg" alt="">
+                    <a href="#"><img src="./asset/navbar/logo/NFTHub.svg" alt=""></a>
                 </div>
                 <div class="nav-item-wrapper">
                     <ul class="nav-item">
@@ -37,11 +43,11 @@
                     </ul>
                 </div>
                 <div class="nav-icon-wrapper">
-                    <ul class="nav-icon">
-                        <li><a href="#"><img src="./asset/navbar/icon/twitter.svg" alt=""></a></li>
-                        <li><a href="#"><img src="./asset/navbar/icon/discord.svg" alt=""></a></li>
-                        <li><a href="#"><img src="./asset/navbar/icon/instagram.svg" alt=""></a></li>
-                        <li><a href="#"><img src="./asset/navbar/icon/file.svg" alt=""></a></li>
+                    <ul class="nav-icon grow">
+                        <li class="nav-icon-list grow"><a href="#"><img src="./asset/navbar/icon/twitter.svg" alt=""></a></li>
+                        <li class="nav-icon-list grow"><a href="#"><img src="./asset/navbar/icon/discord.svg" alt=""></a></li>
+                        <li class="nav-icon-list grow"><a href="#"><img src="./asset/navbar/icon/instagram.svg" alt=""></a></li>
+                        <li class="nav-icon-list grow"><a href="#"><img src="./asset/navbar/icon/file.svg" alt=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -58,15 +64,15 @@
             <div class="header-content-wrapper">
                 <div class="header-banner-content">
                     <div class="banner-content">
-                        <h1>High Quality NFT Collection</h1>
-                        <p>A 890 piece custom Nfthub's collection is
+                        <h1 data-aos="fade-right">High Quality NFT Collection</h1>
+                        <p data-aos="fade-up">A 890 piece custom Nfthub's collection is
                             joining the NFT space on Opensea.</p>
-                        <div class="btn-banner-content btn">
-                            <span class="btn-txt">View in OPENSEA</span>
+                        <div class="btn-banner-content btn" data-aos="zoom-in-down">
+                            View in OPENSEA
                             <img src="./asset/header/icon/Vector.svg" class="btn-img">
                         </div>
                         <div class="banner-comunity">
-                            <div class="banner-comunity-item">
+                            <div class="banner-comunity-item" data-aos="fade-down-left">
                                 <li>
                                     <img src="./asset/header/icon/07.png.svg" alt="">
                                 </li>
@@ -78,8 +84,8 @@
                                 </li>
                             </div>
                             <div class="banner-comunity-number">
-                                <h5>47k+</h5>
-                                <span>Community members</span>
+                                <h5 data-aos="fade-right">47k+</h5>
+                                <span data-aos="fade-down">Community members</span>
                             </div>
                         </div>
                     </div>
@@ -105,12 +111,12 @@
                             </div>
                         </div>
                         <div class="banner-img-top">
-                            <img src="./asset/header/img/art_01.jpg.png" alt="">
+                            <img class="banner-img-top-item bounce-right-down" src="./asset/header/img/art_01.jpg.png" alt="">
                             <img src="./asset/header/img/image.png" alt="">
                         </div>
                         <div class="banner-img-bot">
                             <img src="./asset/header/img/image.png" alt="">
-                            <img src="./asset/header/img/art_03.jpg.png" alt="">
+                            <img class="banner-img-bot-item bounce-left-up" src="./asset/header/img/art_03.jpg.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -126,11 +132,11 @@
         <div class="container">
             <div class="brand-wrapper">
                 <div class="brand-item">
-                    <a href="#"><img src="./asset/content/brand/wallet-01.svg.svg" alt=""></a>
-                    <a href="#"><img src="./asset/content/brand/wallet-02.svg.svg" alt=""></a>
-                    <a href="#"><img src="./asset/content/brand/wallet-03.svg.svg" alt=""></a>
-                    <a href="#"><img src="./asset/content/brand/wallet-04.svg.svg" alt=""></a>
-                    <a href="#"><img src="./asset/content/brand/wallet-05.svg.svg" alt=""></a>
+                    <a class="brand-item-list grow" href="#"><img src="./asset/content/brand/wallet-01.svg.svg" data-aos="fade-right" alt=""></a>
+                    <a class="brand-item-list grow" href="#"><img src="./asset/content/brand/wallet-02.svg.svg" data-aos="fade-up" alt=""></a>
+                    <a class="brand-item-list grow" href="#"><img src="./asset/content/brand/wallet-03.svg.svg" data-aos="fade-up" alt=""></a>
+                    <a class="brand-item-list grow" href="#"><img src="./asset/content/brand/wallet-04.svg.svg" data-aos="fade-up" alt=""></a>
+                    <a class="brand-item-list grow" href="#"><img src="./asset/content/brand/wallet-05.svg.svg" data-aos="fade-left" alt=""></a>
                 </div>
             </div>
         </div>
@@ -142,7 +148,7 @@
 
     <section class="divider">
         <div class="container">
-            <div class="divider-item">
+            <div class="divider-item" data-aos="flip-down">
                 <img src="./asset/content/divider/Vector.svg" alt="">
             </div>
         </div>
@@ -155,59 +161,74 @@
     <section class="collection">
         <div class="container">
             <div class="collection-wrapper">
-                <div class="collection-heading">
-                    Nfthub's <span class="collection-heading-color">collection</span>
+                <div class="collection-heading" data-aos="fade-up-right">
+                    Nfthub's <span class="collection-heading-color" data-aos="fade-up-left">collection</span>
                 </div>
                 <div class="collection-content">
-                    <div class="collection-content-wrapper">
-                        <div class="collection-content-img">
-                            <img src="./asset/content/collection/Link ⏵ art_01.jpg.png" alt="">
-                        </div>
-                        <div class="collection-content-item">
-                            <div class="collection-content-item-heading">
-                                <h4>#Metaverse</h4>
+                    <div class="collection-content-slide">
+                        <div class="collection-content-wrapper" data-aos="fade-right">
+                            <div class="collection-content-img" data-aos="flip-right">
+                                <img src="./asset/content/collection/Link ⏵ art_01.jpg.png" alt="">
                             </div>
-                            <div class="collection-content-item-txt">
-                                <span>By TheSalvare</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="collection-content-wrapper">
-                        <div class="collection-content-img">
-                            <img src="./asset/content/collection/Link ⏵ art_02.jpg.png" alt="">
-                        </div>
-                        <div class="collection-content-item">
-                            <div class="collection-content-item-heading">
-                                <h4>#Polly Doll</h4>
-                            </div>
-                            <div class="collection-content-item-txt">
-                                <span>By TheNative</span>
+                            <div class="collection-content-item">
+                                <div class="collection-content-item-heading" data-aos="fade-up">
+                                    <h4>#Metaverse</h4>
+                                </div>
+                                <div class="collection-content-item-txt" data-aos="fade-down-right">
+                                    <span>By TheSalvare</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="collection-content-wrapper">
-                        <div class="collection-content-img">
-                            <img src="./asset/content/collection/Link ⏵ art_03.jpg.png" alt="">
-                        </div>
-                        <div class="collection-content-item">
-                            <div class="collection-content-item-heading">
-                                <h4>#Alec Art</h4>
+                        <div class="collection-content-wrapper" data-aos="fade-up">
+                            <div class="collection-content-img" data-aos="flip-down">
+                                <img src="./asset/content/collection/Link ⏵ art_02.jpg.png" alt="">
                             </div>
-                            <div class="collection-content-item-txt">
-                                <span>By GeorgZvic</span>
+                            <div class="collection-content-item">
+                                <div class="collection-content-item-heading" data-aos="fade-up">
+                                    <h4>#Polly Doll</h4>
+                                </div>
+                                <div class="collection-content-item-txt" data-aos="fade-down-right">
+                                    <span>By TheNative</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="collection-content-wrapper">
-                        <div class="collection-content-img">
-                            <img src="./asset/content/collection/Link ⏵ art_04.jpg.png" alt="">
-                        </div>
-                        <div class="collection-content-item">
-                            <div class="collection-content-item-heading">
-                                <h4>#Toxic Poeth</h4>
+                        <div class="collection-content-wrapper" data-aos="fade-up">
+                            <div class="collection-content-img" data-aos="flip-up">
+                                <img src="./asset/content/collection/Link ⏵ art_03.jpg.png" alt="">
                             </div>
-                            <div class="collection-content-item-txt">
-                                <span>By GeorgZvic</span>
+                            <div class="collection-content-item">
+                                <div class="collection-content-item-heading" data-aos="fade-up">
+                                    <h4>#Alec Art</h4>
+                                </div>
+                                <div class="collection-content-item-txt" data-aos="fade-down-right">
+                                    <span>By GeorgZvic</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collection-content-wrapper" data-aos="fade-left">
+                            <div class="collection-content-img" data-aos="flip-left">
+                                <img src="./asset/content/collection/Link ⏵ art_04.jpg.png" alt="">
+                            </div>
+                            <div class="collection-content-item">
+                                <div class="collection-content-item-heading" data-aos="fade-up">
+                                    <h4>#Toxic Poeth</h4>
+                                </div>
+                                <div class="collection-content-item-txt" data-aos="fade-down-right">
+                                    <span>By GeorgZvic</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collection-content-wrapper">
+                            <div class="collection-content-img">
+                                <img src="./asset/content/collection/Link ⏵ art_01.jpg.png" alt="">
+                            </div>
+                            <div class="collection-content-item">
+                                <div class="collection-content-item-heading">
+                                    <h4>#Metaverse</h4>
+                                </div>
+                                <div class="collection-content-item-txt">
+                                    <span>By TheSalvare</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -218,15 +239,15 @@
                         <img src="./asset/content/icon/next.svg" alt="">
                     </div>
                 </div>
-                <div class="collection-swipper">
-                    <div class="btn-gotoslide active"></div>
+                <div class="collection-swipper" data-aos="fade-left">
+                    <div class="btn-gotoslide active" data-aos="fade-up-left"></div>
                     <div class="btn-gotoslide"></div>
                     <div class="btn-gotoslide"></div>
                     <div class="btn-gotoslide"></div>
                     <div class="btn-gotoslide"></div>
                 </div>
-                <div class="collection-btn btn">
-                    <span class="btn-txt">View collection</span>
+                <div class="collection-btn btn" data-aos="zoom-in-up">
+                    View collection
                     <img src="./asset/header/icon/Vector.svg" class="btn-img">
                 </div>
             </div>
@@ -235,13 +256,124 @@
 
     <!-- end collection -->
 
+    <!-- divider -->
+
     <section class="divider">
         <div class="container">
-            <div class="divider-item">
+            <div class="divider-item" data-aos="flip-down">
                 <img src="./asset/content/divider/Vector.svg" alt="">
             </div>
         </div>
     </section>
     
+    <!-- end divider-->
+
+    <!-- why -->
+    <section class="why">
+        <div class="container">
+            <div class="why-wrapper">
+                <div class="why-heading" data-aos="fade-left">
+                    Why choose us?
+                </div>
+                <div class="why-content">
+                    <div class="why-content-row">
+                        <div class="why-content-wrapper-top" data-aos="fade-down">
+                            <div class="why-content-item" data-aos="fade-down">
+                                <div class="why-icon" data-aos="fade-down">
+                                    <img src="./asset/content/icon/Vector.svg" alt="">
+                                </div>
+                                <div class="why-txt">
+                                    <h3 data-aos="fade-left">Huge
+                                        collection</h3>
+                                    <p data-aos="fade-down-right">A collection of 890
+                                        unique Nerkos built to go
+                                        beyond the digital space.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="why-content-wrapper-bot" data-aos="fade-up">
+                            <div class="why-content-item" data-aos="fade-up">
+                                <div class="why-icon" data-aos="fade-up">
+                                    <img src="./asset/content/icon/Vector (1).svg" alt="">
+                                </div>
+                                <div class="why-txt">
+                                    <h3 data-aos="fade-left">High
+                                        quality</h3>
+                                    <p data-aos="fade-right">The nerko's collection
+                                        includes dozens of rare
+                                        costumes ands colorways
+                                        of artist's.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="why-content-wrapper-top" data-aos="fade-down">
+                            <div class="why-content-item" data-aos="fade-down">
+                                <div class="why-icon" data-aos="fade-down">
+                                    <img src="./asset/content/icon/Vector (2).svg" alt="">
+                                </div>
+                                <div class="why-txt">
+                                    <h3 data-aos="fade-left">Top
+                                        resource</h3>
+                                    <p data-aos="fade-right">Tasty design resources
+                                        made with care for each
+                                        pixel. NFTs and game
+                                        resources.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="why-content-wrapper-bot" data-aos="fade-up">
+                            <div class="why-content-item" data-aos="fade-up">
+                                <div class="why-icon" data-aos="fade-up">
+                                    <img src="./asset/content/icon/Vector (3).svg" alt="">
+                                </div>
+                                <div class="why-txt">
+                                    <h3 data-aos="fade-left">Big
+                                        community</h3>
+                                    <p data-aos="fade-right">Be part of a community of
+                                        nerko owners and create
+                                        user generated items.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $('.collection-content-slide').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+                variableWidth: false,
+                draggable: true,
+                speed: 400,
+                centerMode: false,
+            });
+
+
+
+        });
+
+
+        $('.btn-prev-slide').click(()=>{
+            $('.collection-content-slide').slick('slickPrev')
+        });
+
+        $('.btn-next-slide').click(()=>{
+            $('.collection-content-slide').slick('slickNext')
+        });
+        AOS.init();
+    </script>
+
 </body>
 </html>
