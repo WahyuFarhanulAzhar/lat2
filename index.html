@@ -56,6 +56,95 @@
     
     <!-- end nav -->
 
+    <!-- nav toggle -->
+
+    <section class="nav-toggle" id="nav-toggle">
+        <div class="container">
+            <div class="nav-toggle-wrapper">
+                <div class="nt-nav">
+                    <a class="nt-logo">
+                        NFTHub
+                    </a>
+                    <ul class="nt-list-menu">
+                        <li class="nt-item">
+                            <a href="#" class="nt-item-link"><img class="nt-item-img" src="./asset/navbar/icon/discord.svg" alt=""></a>
+                        </li>
+                        <li class="nt-item">
+                            <a href="#" class="nt-item-link"><img class="nt-item-img" src="./asset/navbar/icon/instagram.svg" alt=""></a>
+                        </li>
+                        <li class="nt-item">
+                            <a href="#" class="nt-item-link"><img class="nt-item-img" src="./asset/navbar/icon/file.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="nt-icon" onclick="openNav()">
+                    <img src="./asset/navbar/icon/Vector.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- end nav toggle -->
+
+    <!-- mobile nav -->
+
+    <section class="mobileNav" id="mobileNav">
+        <div class="container">
+            <div class="mobileNav-wrapper">
+                <div class="mnav-top">
+                    <a href="#" class="mnav-logo">
+                        <img class="mnav-logo-img" src="./asset/navbar/logo/logo.svg.svg" alt="">
+                    </a>
+                    <a href="#" class="mnav-close-btn" onclick="closeNav()">
+                        <img class="mnav-close-img" src="./asset/navbar/icon/close.svg" alt="">
+                    </a>
+
+                </div>
+                <ul class="mnav-list-item">
+                    <li class="mnav-item">
+                        <a href="#" class="mnav-item-txt">Home</a>
+                        <div class="mnav-dropdown-btn">
+                            <span><img src="./asset/navbar/icon/span.plus-line.svg" alt=""></span>
+                        </div>
+                    </li>
+                    <li class="mnav-item">
+                        <a href="#" class="mnav-item-txt">Collection</a>
+                    </li>
+                    <li class="mnav-item">
+                        <a href="#" class="mnav-item-txt">Choose</a>
+                    </li>
+                    <li class="mnav-item">
+                        <a href="#" class="mnav-item-txt">About</a>
+                    </li>
+                    <li class="mnav-item">
+                        <a href="#" class="mnav-item-txt">Roadmap</a>
+                    </li>
+                    <li class="mnav-item">
+                        <a href="#" class="mnav-item-txt">Blog</a>
+                    </li>
+                </ul>
+                <ul class="mnav-list-icon">
+                    <li class="mnav-icon">
+                        <a href="#" class="mnav-icon-link"><img src="./asset/navbar/icon/fb-mnav.svg" alt=""></a>
+                    </li>
+                    <li class="mnav-icon">
+                        <a href="#" class="mnav-icon-link"><img src="./asset/navbar/icon/twitter-mnav.svg" alt=""></a>
+                    </li>
+                    <li class="mnav-icon">
+                        <a href="#" class="mnav-icon-link"><img src="./asset/navbar/icon/ig-mnav.svg" alt=""></a>
+                    </li>
+                    <li class="mnav-icon">
+                        <a href="#" class="mnav-icon-link"><img src="./asset/navbar/icon/dc-mnav.svg" alt=""></a>
+                    </li>
+                    <li class="mnav-icon">
+                        <a href="#" class="mnav-icon-link"><img src="./asset/navbar/icon/telegram-mnav.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- end mobile nav -->
 
     <!-- header -->
 
@@ -1314,34 +1403,42 @@
                                 and announcements.
                             </p>
                             <div class="footer-info-content-social" data-aos="fade-right">
-                                <a href="#" class="footer-info-social-link grow"><img src="./asset/navbar/icon/twitter.svg" alt=""></a>
-                                <a href="#" class="footer-info-social-link grow"><img src="./asset/navbar/icon/instagram.svg" alt=""></a>
-                                <a href="#" class="footer-info-social-link grow"><img src="./asset/navbar/icon/youtube.svg" alt=""></a>
+                                <a href="#" class="footer-info-social-link grow"><img class="footer-info-social-img" src="./asset/navbar/icon/twitter.svg" alt=""></a>
+                                <a href="#" class="footer-info-social-link grow"><img class="footer-info-social-img" src="./asset/navbar/icon/instagram.svg" alt=""></a>
+                                <a href="#" class="footer-info-social-link grow"><img class="footer-info-social-img" src="./asset/navbar/icon/youtube.svg" alt=""></a>
                             </div>
                         </div>
                         
                     </div>
-                    <div class="footer-quicklink">
-                        <div class="footer-quicklink-content" data-aos="fade-left">
-                            <h4 class="footer-quicklink-heading" data-aos="fade-right">
-                                Quick Link
-                            </h4>
-                            <a href="#" class="footer-quicklink-list">About</a>
-                            <a href="#" class="footer-quicklink-list">Collection</a>
-                            <a href="#" class="footer-quicklink-list">Roadmap</a>
-                            <a href="#" class="footer-quicklink-list">FAQs</a>
-                        </div>
+                    <div class="footer-blank">
+
                     </div>
-                    <div class="footer-comunity">
-                        <div class="footer-comunity-content" data-aos="fade-right">
-                            <h4 class="footer-comunity-heading" data-aos="fade-left">
-                                Community
-                            </h4>
-                            <a href="#" class="footer-comunity-list">How it works!</a>
-                            <a href="#" class="footer-comunity-list">Blockchain</a>
-                            <a href="#" class="footer-comunity-list">Get in touch</a>
+
+                    <div class="footer-lg-2">
+                        <div class="footer-quicklink">
+                            <div class="footer-quicklink-content" data-aos="fade-left">
+                                <h4 class="footer-quicklink-heading" data-aos="fade-right">
+                                    Quick Link
+                                </h4>
+                                <a href="#" class="footer-quicklink-list">About</a>
+                                <a href="#" class="footer-quicklink-list">Collection</a>
+                                <a href="#" class="footer-quicklink-list">Roadmap</a>
+                                <a href="#" class="footer-quicklink-list">FAQs</a>
+                            </div>
                         </div>
+                        <div class="footer-comunity">
+                            <div class="footer-comunity-content" data-aos="fade-right">
+                                <h4 class="footer-comunity-heading" data-aos="fade-left">
+                                    Community
+                                </h4>
+                                <a href="#" class="footer-comunity-list">How it works!</a>
+                                <a href="#" class="footer-comunity-list">Blockchain</a>
+                                <a href="#" class="footer-comunity-list">Get in touch</a>
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
                 <div class="footer-bot">
                     <div class="footer-copyright">
@@ -1468,7 +1565,15 @@
     };
 });
 
+function openNav() {
+  document.getElementById("mobileNav").style.width = "300px";
+//   document.getElementById("nav-toggle").style.display = "none";
+}
 
+function closeNav() {
+  document.getElementById("mobileNav").style.width = "0";
+//   document.getElementById("nav-toggle").style.display= "flex";
+}
 
     
 
