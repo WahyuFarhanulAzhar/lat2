@@ -148,15 +148,14 @@
         <div class="header-background"></div>
         <div class="container">
             <div class="header-content-wrapper">
-                
                 <div class="banner-content">
                     <h1 data-aos="fade-right">High Quality NFT Collection</h1>
                     <p data-aos="fade-up">A 890 piece custom Nfthub's collection is
                         joining the NFT space on Opensea.</p>
-                    <div class="btn-banner-content btn" data-aos="zoom-in-down">
+                    <a class="btn-banner-content btn" data-aos="zoom-in-down">
                         View in OPENSEA
                         <img src="./asset/header/icon/Vector.svg" class="btn-img">
-                    </div>
+                    </a>
                     <div class="banner-comunity">
                         <div class="banner-comunity-item" data-aos="fade-down-left">
                             <li class="banner-comunity-item-1">
@@ -417,11 +416,13 @@
                                 </div>
                                 <div class="why-txt">
                                     <h3 data-aos="fade-left">High
-                                        quality</h3>
+                                        quality
+                                    </h3>
                                     <p data-aos="fade-right">The nerko's collection
                                         includes dozens of rare
                                         costumes ands colorways
-                                        of artist's.</p>
+                                        of artist's.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -468,7 +469,7 @@
 
     <section class="divider">
         <div class="container">
-            <div class="divider-wrapper">
+            <div class="divider-wrapper notop">
                 <div class="divider-item" data-aos="flip-down">
                     <img src="./asset/content/divider/Vector.svg" alt="">
                 </div>
@@ -608,10 +609,12 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit
                                         Metamask or any wallet ipsam temporibus.
                                 </p>
-                                <a href="#" class="work-item-link" data-aos="fade-down-right">  
-                                    <span class="work-item-link-txt">Learn more</span>
-                                    <img class="work-item-link-img" src="./asset/content/icon/unicorn-arrow.svg" alt=""> 
-                                </a>
+                                <div class="work-item-link-wrapper">
+                                    <a href="#" class="work-item-link" data-aos="fade-down-right">  
+                                        <span class="work-item-link-txt">Learn more</span>
+                                        <img class="work-item-link-img" src="./asset/content/icon/unicorn-arrow.svg" alt=""> 
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -635,10 +638,12 @@
                                     Starting the production on the procedurally generated
                                     planets and the smart contract for minting.
                                 </div>
-                                <a href="#" class="work-item-link" data-aos="fade-left">  
-                                    <span class="work-item-link-txt">Learn more</span>
-                                    <img class="work-item-link-img" src="./asset/content/icon/unicorn-arrow.svg" alt=""> 
-                                </a>
+                                <div class="work-item-link-wrapper">
+                                    <a href="#" class="work-item-link" data-aos="fade-down-right">  
+                                        <span class="work-item-link-txt">Learn more</span>
+                                        <img class="work-item-link-img" src="./asset/content/icon/unicorn-arrow.svg" alt=""> 
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="work-content-right" data-aos="fade-left">
@@ -669,10 +674,12 @@
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                     Recusandae doloremque a officiis quasi autem!
                                 </div>
-                                <a href="#" class="work-item-link" data-aos="fade-right ">  
-                                    <span class="work-item-link-txt">Learn more</span>
-                                    <img class="work-item-link-img" src="./asset/content/icon/unicorn-arrow.svg" alt=""> 
-                                </a>
+                                <div class="work-item-link-wrapper">
+                                    <a href="#" class="work-item-link" data-aos="fade-down-right">  
+                                        <span class="work-item-link-txt">Learn more</span>
+                                        <img class="work-item-link-img" src="./asset/content/icon/unicorn-arrow.svg" alt=""> 
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1468,7 +1475,7 @@
         $(document).ready(()=>{
             $('.collection-content-slide').slick({
                 infinite: true,
-                slidesToShow: 4,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 arrows: false,
                 dots: true,
